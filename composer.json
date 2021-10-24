@@ -1,0 +1,59 @@
+{
+  "name": "ergebnis/php-package-template",
+  "type": "library",
+  "description": "Provides a GitHub repository template for a PHP library, using GitHub actions.",
+  "homepage": "https://github.com/ergebnis/php-package-template",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andreas Möller",
+      "email": "am@localheinz.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4 || ^8.0"
+  },
+  "require-dev": {
+    "ergebnis/composer-normalize": "^2.15.0",
+    "ergebnis/license": "^1.1.0",
+    "ergebnis/php-cs-fixer-config": "^3.2.0",
+    "ergebnis/phpstan-rules": "~0.15.3",
+    "ergebnis/test-util": "^1.5.0",
+    "infection/infection": "~0.25.3",
+    "phpstan/extension-installer": "^1.1.0",
+    "phpstan/phpstan": "~0.12.99",
+    "phpstan/phpstan-deprecation-rules": "~0.12.6",
+    "phpstan/phpstan-phpunit": "~0.12.22",
+    "phpstan/phpstan-strict-rules": "~0.12.11",
+    "phpunit/phpunit": "~9.5.10",
+    "psalm/plugin-phpunit": "~0.16.1",
+    "vimeo/psalm": "^4.10.0"
+  },
+  "config": {
+    "platform": {
+      "php": "7.4.16"
+    },
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "extra": {
+    "composer-normalize": {
+      "indent-size": 2,
+      "indent-style": "space"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Ergebnis\\Package\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Ergebnis\\Package\\Test\\": "test/"
+    }
+  },
+  "support": {
+    "issues": "https://github.com/ergebnis/php-package-template/issues",
+    "source": "https://github.com/ergebnis/php-package-template"
+  }
+}
